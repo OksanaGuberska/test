@@ -1,0 +1,41 @@
+1)	Посмотреть где я – pwd
+2)	Создать папку – mkdir GitBash
+3)	Зайти в папку - cd !$ (перейти у щойно створену папку) або cd GitBash
+4)	Создать 3 папки – mkdir folder1 folder2 folder3 
+5)	Зайти в любоую папку – cd folder1
+6)	Создать 5 файлов (3 txt, 2 json) – touch name1.txt name2.txt name3.txt name4.json name5.json
+7)	Создать 3 папки – mkdir papka1 papka2 papka3
+8)	Вывести список содержимого папки – ls або ls -la
+9)	Открыть любой txt файл – cat name1.txt
+10)	написать туда что-нибудь, любой текст – cat >> name1.txt  або vim name1.txt     I (insert) 
+Hello world!!! (щоб зберігся останній рядок – натиснути Enter)
+11)	сохранить и выйти – CTRL+C або :wq
+12)	Выйти из папки на уровень выше – cd ../
+13)	переместить любые 2 файла, которые вы создали, в любую другую папку – 
+mv folder2/name2.txt folder2/name3.txt folder1 
+14)	скопировать любые 2 файла, которые вы создали, в любую другую папку – 
+cp folder1/name1.txt folder1/name2.txt folder3 
+15)	Найти файл по имени – find . -name name1.txt 
+16)	просмотреть содержимое в реальном времени (команда grep) изучите как она работает – 
+ tail -f name2.txt
+17)	вывести несколько первых строк из текстового файла – head -3 name2.txt
+18)	вывести несколько последних строк из текстового файла – tail -4 name2.txt
+19)	просмотреть содержимое длинного файла (команда less) изучите как она работает –               less name2.txt 
+20)	вывести дату и время – date 
+
+21)	Отправить http запрос на сервер  
+curl http://162.55.220.72:5005/terminal-hw-request 
+22)	Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 
+chmod +x script.sh 
+./script.sh
+
+Тело скрипта: 
+cd GitBash2
+mkdir folder1 folder2 folder3 
+cd folder1
+touch name1.txt name2.txt name3.txt name4.json name5.json
+mkdir papka1 papka2 papka3
+ls
+mv folder1/name2.txt folder1/name3.txt papka2
+
+
